@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import com.user.details.userdetails.dto.OrderRequestDto;
 import com.user.details.userdetails.dto.OrderResponseDto;
 
-@FeignClient(name = "ORDER-SERVICE", url = "http://localhost:8081/order")
+@FeignClient(name = "http://ORDER-SERVICE/order")
 public interface OrderClient {
 
 	@GetMapping("/get")
